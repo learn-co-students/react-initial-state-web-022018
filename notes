@@ -1,0 +1,20 @@
+
+////////////////////////////////////////State
+State is basically data that is mutated in your component
+ while a component can't change its own props, it can change its state.
+State is used to handle several things in your component:
+ Interactivity (e.g. changing data when a user clicks a button)
+ Fetching remote data (remote data is, by definition, not available right away when the component is mounted —
+  state gives us a way of updating the component once that data arrives)
+ Reacting to the passing of time (i.e. setting an interval or timeout)
+
+ State vs Prop
+ The best way to figure out if data should go in props or state is to ask ourselves 'Will this data ever change?'.
+  If not, it's a prop. If it will, it should go in state!
+
+
+ follow along by running npm install && npm start in your terminal.
+
+ example:
+  A toggle button has an on and off state. Using props for that value wouldn't work, since we can't actually change our props!
+  
