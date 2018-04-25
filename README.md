@@ -1,12 +1,12 @@
 # React Initial State
 
-## Overview 
+## Overview
 
-In this lesson, we'll explain the concept of component state. 
+In this lesson, we'll explain the concept of component state.
 
 ## Objectives
 1. Explain how to define a component's initial state
-2. Explain the difference between initialState and defaultProps
+2. Explain the difference between initialState and defaultPr
 3. Practice defining a component's initial state
 
 ## What's state?
@@ -34,7 +34,7 @@ Let's say we have a `<ToggleButton />` component. A toggle button has an on and 
 // src/components/ToggleButton.js
 import React from 'react';
 
-class ToggleButton extends React.Component { 
+class ToggleButton extends React.Component {
   constructor() {
     super();
 
@@ -55,9 +55,9 @@ class ToggleButton extends React.Component {
 export default ToggleButton;
 ```
 
-and in our `src/index.js` lets import that to see what it looks like 
+and in our `src/index.js` lets import that to see what it looks like
 
-```js 
+```js
 // src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -86,7 +86,7 @@ class Address extends React.Component {
     this.state = {
       fullAddress: `${props.street}, ${props.city}`
     }
-  } 
+  }
 
   render() {
     return (
@@ -102,7 +102,7 @@ export default Address;
 
 And we should update our `src/index.js` to handle mounting this component:
 
-```js 
+```js
 // src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -110,7 +110,7 @@ import ReactDOM from 'react-dom';
 import Address from './components/Address';
 
 ReactDOM.render(
-  <Address 
+  <Address
     street="Santa Monica Blvd."
     city="Santa Monica"
   />,
